@@ -2,10 +2,15 @@
 
 @font-face {
   font-family: "Highway Gothic";
-  src: url("fonts/HighwayGothic.woff2") format("woff2");
+  src: url("hwygoth.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1, h2, h3, .navbar-brand { letter-spacing: 0.1em; font-weight: 700; }
+h1, h2, h3, .navbar-brand {
+  font-family: "Highway Gothic", sans-serif;
+  letter-spacing: 0.08em;
+}
 
 .navbar { background: black !important; }
 
