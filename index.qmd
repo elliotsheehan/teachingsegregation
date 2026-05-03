@@ -2,9 +2,11 @@
 title: "Race and Housing in 1900s Roanoke, VA"
 ---
 
-![David Ramey (1939-2017), Gainsboro Road, ©David Ramey](https://www.taubmanmuseum.org/wp-content/uploads/2023/06/Ramey-2.jpg)
+![David Ramey (1939–2017), Gainsboro Road, ©David Ramey](ramey-2.jpg)
 
-**Research Question:** What factors explain twentieth-century residential segregation in Roanoke, Virginia? How did discriminatory tactics and patterns of segregation change over time?
+## Research Question
+
+#### *What factors explain twentieth-century residential segregation in Roanoke, Virginia? How did discriminatory tactics and patterns of segregation change over time?* 
 
 In recent years, the impacts of housing discrimination, interstate highways, and urban renewal have received increasing attention. Scholars like Robert Weaver, Jane Jacobs, and Herbert Gans were among the earliest to document the litany of tactics used by white politicians, bureaucrats, real estate investors, and neighborhood associations alike to segregate American cities.[\[1\]](#_ftn1) More recently, scholars like Elizabeth Hinton, Mindy Fullilove, and Douglas Appler have demonstrated how communities have responded to destructive urban projects.[\[2\]](#_ftn2) This project will use Roanoke as a case study for a US history unit, aligned to the C3 Framework and Virginia Standards of Learning (SOLs). I will organize the unit around three distinct but thematically-related modules emphasizing racially restrictive covenants, redlining and mortgage discrimination, and urban renewal and highway construction. Students will identify the factors that have contributed to residential segregation in Roanoke and how segregationist tactics and patterns of segregation have evolved throughout the twentieth century.
 
@@ -12,8 +14,9 @@ Scholars and public historians have made valuable contributions in the documenta
 
 The unit will be modeled after the C3 Framework for Social Studies State Standards. Each lesson will follow C3’s Inquiry Design Model (IDM), which engages students in investigating compelling questions, analyzing sources, and developing evidence-based arguments.[\[3\]](#_ftn3) Though the SOLs are chronologically structured, history educators who teach thematically use the thematic strands from the National Council for the Social Studies to make their curriculum coherent. I will therefore align the modules to the following strands: Time, Continuity, and Change; People, Places, and Environments; Power, Authority, and Governance; and Individuals, Groups, and Institutions. Grounding the unit in these strands facilitates connections across different units. 
 
-Despite the limitations in the SOLS, the 2023 update of the Virginia SOLs for eleventh grade Virginia and United States History provides an opportunity to cover the fraught history of urban development. The content standards are structured such that each strand (i.e. VUS.10 or VUS.16) contains supporting questions that seek to guide students towards mastery. Forming a \
-“Unit Essential Question” (UEQ) is furthermore considered a best practice in social studies pedagogy. For the purpose of this project, the UEQ will serve as the main inquiry, for in answering my own research question I will be able to provide students with the appropriate tools and material to come to develop their own arguments. Therefore, I have developed the research question (above) from the synthesis of the following content standards and supporting questions provided by the Virginia Department of Education:
+## Content Standards
+
+Despite the limitations in the SOLS, the 2023 update of the Virginia SOLs for eleventh grade Virginia and United States History provides an opportunity to cover the fraught history of urban development. The content standards are structured such that each strand (i.e. VUS.10 or VUS.16) contains supporting questions that seek to guide students towards mastery. Forming a “Unit Essential Question” (UEQ) is furthermore considered a best practice in social studies pedagogy. For the purpose of this project, the UEQ will serve as the main inquiry, for in answering my own research question I will be able to provide students with the appropriate tools and material to come to develop their own arguments. Therefore, I have developed the research question (above) from the synthesis of the following content standards and supporting questions provided by the Virginia Department of Education:
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Content Standards**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -39,6 +42,8 @@ Despite the limitations in the SOLS, the 2023 update of the Virginia SOLs for el
 | **Supporting Questions:** Who were the key leaders and organizations of the modern Civil Rights Movement? What tactics were used to gain public attention and garner support for civil rights legislation?                                                                                                                                                                                                                                                                                                                                            |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+## Skill Standards
+
 To align with the IDM framework that culminates in an evidence-based argument, the summative assessment for the unit will take the form of an “unessay.” Students will synthesize the sources from the unit to make an argument about the factors that have led to residential segregation in Roanoke and how they changed over time. As such, students will be working towards the following skill standards: 
 
 |  |
@@ -47,6 +52,8 @@ To align with the IDM framework that culminates in an evidence-based argument, t
 | d\. investigating and   analyzing evidence from multiple sources to construct arguments and draw conclusions |
 | f\. determining cause and   effect to analyze connections |
 | i\. developing products   that reflect an understanding of research and content to make real-life   connections |
+
+## Unit Outline
 
 In order for students to master the content and skill standards, I will structure the lesson around the following topics and sources:
 
@@ -59,6 +66,8 @@ Though Roanoke will be central to the content, there may be instances where I wi
 To build the source sets for this unit, I will combine exisiting research with original. The lessons will contain material from *Root* Shock, the Gainsboro History project, and Gainsboro oral histories. I will conduct original research at Virginia Tech Special Collections, Roanoke Public Libraries, and City of Roanoke deeds office. One issue I foresee is reproducing archival material on the web, so I will be proactive about obtaining permissions.
 
 Each module will contain ready-to-use lesson materials and activities and a guide for teachers. To best accommodate students, the modules will employ the principles of Universal Design for Learning (UDL) and Differentiated Instruction (DI). I will also use tools learned in my digital history course to create the website, including R code and Quarto website building. The project will be publicly available for teachers and students of eleventh grade Virginia and US History. Other intended audiences include the portfolio committee, the Roanoke community, and future employers.
+
+## Footnotes
 
 [\[1\]](#_ftnref1) Robert C. Weaver, *The Negro Ghetto* (Harcourt, Brace & World, 1968); Jane Jacobs, *The Death and Life of Great American Cities* (Random House, 1961); Herbert J. Gans, *The Urban Villagers: Group and Class in the Life of Italian-Americans* (Free Press, 1962).
 

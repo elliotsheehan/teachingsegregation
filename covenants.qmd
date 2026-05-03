@@ -11,8 +11,10 @@ library(sf)
 library(tigris)
 library(dplyr)
 
+options(tigris_use_cache = TRUE)
+
 roanoke <- places(state = "VA", cb = TRUE) %>%
-  filter(NAME == "Roanoke")
+  filter(grepl("Roanoke", NAME))
 ```
 
 ```{r}
@@ -24,6 +26,7 @@ ggplot(roanoke) +
 ```
 
 ```{r}
+#| echo: false
 library(leaflet)
 
 leaflet(roanoke) %>%
