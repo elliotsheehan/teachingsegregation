@@ -1,3 +1,38 @@
 ---
 title: "Lesson 1: Covenants"
 ---
+
+<iframe src="lesson-template.pdf" width="100%" height="700px">
+
+**Here would go a map showing racially restrictive covenants that I will have identified through research at the deeds office in Roanoke**
+
+```{r}
+library(sf)
+library(tigris)
+library(dplyr)
+
+roanoke <- places(state = "VA", cb = TRUE) %>%
+  filter(NAME == "Roanoke")
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(roanoke) +
+  geom_sf(fill = "gray", color = "black") +
+  ggtitle("Roanoke, Virginia")
+```
+
+```{r}
+library(leaflet)
+
+leaflet(roanoke) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = "gray",
+    fillOpacity = 0.3,
+    color = "black",
+    weight = 1
+  ) %>%
+  setView(lng = -79.9414, lat = 37.2710, zoom = 11)
+```
