@@ -19,5 +19,9 @@ format:
       - cosmo
     css: styles.css
     toc: true
+    
+execute:
+  message: false
+  warning: false
 
 editor: visual

@@ -2,8 +2,12 @@
 title: "Resources"
 ---
 
-About this site
+Here are some further resources/sites from which I took inspiration:
 
-```{r}
-1 + 1
-```
+[Mapping Inequality (redlining in Roanoke)](https://dsl.richmond.edu/panorama/redlining/map/VA/Roanoke/areas#mapview=full&loc=12/37.2718/-79.975)
+
+[Chicago Covenants Project](https://experience.arcgis.com/experience/32c7a747127e46dda110e82848286394/)
+
+[Mapping Prejudice (racially restrictive covenants project in Minnesota)](https://mappingprejudice.umn.edu)
+
+[Renewing Inequality (urban renewal in Roanoke)](https://dsl.richmond.edu/panorama/renewal/#view=0/0/1&viz=cartogram&city=roanokeVA&loc=15/37.2740/-79.9377&cityview=pr)

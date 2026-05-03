@@ -2,4 +2,68 @@
 title: "Lesson 2: Redlining"
 ---
 
+This will be a lesson on mortgage discrimination in Roanoke.
+
+First, I start by downloading spatial data from the digital history project *Mapping Inequality*. This project offers spatial data from Home Owners Loan Corporation mortgage security risk maps. When I initally plotted the data, RStudio assigned its own colors to the different values on the map. Therefore, I used `colorFactor()` to create a palette that resembled the colors that HOLC uses on their maps. At a later date, I will refine the hues to be more historically accurate, but for now, I just used the default colors.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| include: false
+
+library(sf)
+library(leaflet)
+
+redlining <- st_read("redlining.json")
+
+pal <- colorFactor(
+  palette = c("A" = "blue", 
+              "B" = "green", 
+              "C" = "yellow", 
+              "D" = "red"), 
+  domain = redlining$grade
+)
+```
+
+Again, I want students to be able to interact with the map at any scale, so I chose to visualize the data with `leaflet`. Students can click on an area and it will reveal a `popup` that shows the `"grade"`, though later I hope to integrate more data from the area description documents, like racial makeup and household income. For now, I needed to keep it simple.
+
+```{r}
+#| echo: false
+
+leaflet(redlining) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(
+    fillColor = ~pal(grade),
+    color = "black",
+    weight = 1,
+    fillOpacity = 0.6,
+    popup = ~paste("Grade:", grade),
+    highlight = highlightOptions(
+      weight = 3,
+      color = "gray",
+      bringToFront = TRUE
+    )
+  ) %>%
+  addLegend(
+    pal = pal,
+    values = ~grade,
+    title = "HOLC Grade",
+    opacity = 1
+  )
+```
+
+Ultimately, to build on the last lesson, I will create a map that combines the restrictive covenant parcels with the redlining data. This way, students will be able to synthesize and solidify their understanding of the evolution of residential segregation in Roanoke.
+
+### References
+
+1.  <https://www.w3schools.com/TAGS/tag_iframe.asp>
+2.  <https://dsl.richmond.edu/panorama/redlining/map/VA/Roanoke/areas#mapview=full&loc=12/37.2718/-79.975>
+3.  <https://leafletjs.com>
+4.  <https://campus.datacamp.com/courses/interactive-maps-with-leaflet-in-r/plotting-points?ex=15>
+
+### Lesson Plan
+
+Each lesson contains a PDF document that will house the detailed lesson plan. To do this, I used `<iframe>` to embed my PDF onto the page. This allows users to magnify, download, and print the document. Since PDFs are not accessible, I plan to later display this content with Markdown text. However, I wanted to play around with `<iframe>`.
+
 <iframe src="lesson-template.pdf" width="100%" height="700px">

@@ -2,32 +2,76 @@
 title: "Lesson 1: Covenants"
 ---
 
-<iframe src="lesson-template.pdf" width="100%" height="700px">
-
-**Here would go a map showing racially restrictive covenants that I will have identified through research at the deeds office in Roanoke**
+This will be a lesson on racially restrictive covenants in Roanoke, where students will work with population and spatial data to understand the emergence of systematic residential segregation in the city.
 
 ```{r}
+#| echo: false
+
 library(sf)
 library(tigris)
 library(dplyr)
+library(ggplot2)
+library(leaflet)
 
 options(tigris_use_cache = TRUE)
+options(tigris_progress_bar = FALSE)
 
 roanoke <- places(state = "VA", cb = TRUE) %>%
   filter(grepl("Roanoke", NAME))
 ```
 
-```{r}
-library(ggplot2)
+To begin, I made a graph with `ggplot` to show the rapid population growth of Roanoke. I used `annotate` to call attention to the rate of increase. I plan to add racial data as two more lines on this graph. I will use this data to contextualize a 1893 race riot and subsequent efforts to organize the city along racial lines through the use of restrictive covenants.
 
-ggplot(roanoke) +
-  geom_sf(fill = "gray", color = "black") +
-  ggtitle("Roanoke, Virginia")
-```
+One thing I obviously need to work out is the the x-axis, which goes up to 2100, even though that is not a year that I have in my data file. Perhaps this is because of the annotation.
 
 ```{r}
 #| echo: false
-library(leaflet)
+
+roa_pop <- read.csv("roa-pop.csv")
+
+ggplot(roa_pop, aes(x = year, y = population)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "Roanoke Population Over Time",
+    x = "Year",
+    y = "Population"
+  ) +
+  annotate(
+    "label",
+    x = max(roa_pop$year, na.rm = TRUE) + 100,
+    y = min(roa_pop$population, na.rm = TRUE) + 0.1 * diff(range(roa_pop$population, na.rm = TRUE)),
+    label = "Between 1880 and 1890, Roanoke's population grew by more than 2000%",
+    fill = "white",
+    color = "black",
+    label.size = 0.3,
+    label.padding = unit(0.3, "lines"),
+    hjust = 1,
+    vjust = 0,
+    size = 4
+  ) +
+  theme_minimal()
+```
+
+For this project, I hope to locate racially restrictive covenants from the Roanoke deeds office. Thinking about how I wanted to map the covenants, I started with `ggplot` and `geo_sf`. I loaded `tigris`, a package that contains the boundaries for Census designated places, and used a few more commands to single out Roanoke.
+
+```{r}
+#| echo: false
+
+roanoke <- st_transform(roanoke, 4326)
+
+ggplot(roanoke) +
+  geom_sf(fill = "white", color = "black", linewidth = 1) +
+  labs(
+    title = "Roanoke, VA, City Limits",
+  ) +
+  theme_void()
+```
+
+However, thinking long-term, I decided `ggplot` is perhaps not the best way to visualize spatial data for the tiny parcels that would display where the racially restrictive covenants were. Therefore, I decided to go interactive with `leaflet`, so students can magnify the map. Also, `leaflet` uses OpenStreetMap as a basemap, which would give students several reference points with the existing features on the map.
+
+```{r}
+#| echo: false
 
 leaflet(roanoke) %>%
   addTiles() %>%
@@ -39,3 +83,20 @@ leaflet(roanoke) %>%
   ) %>%
   setView(lng = -79.9414, lat = 37.2710, zoom = 11)
 ```
+
+To prepare to map covenants, I figured I would need to download parcel data, which I found from Roanoke's Real Estate Office and have included in my repository as `"parcels.shp"`. Given the massive amount of data in this file, it took quite a long time to run. I therefore decided that I would return to `"parcels.shp"` when I have the data for the covenants. That way, I could isolate the parcels whose deeds had historically contained racially restrictive language, and it would be far less data to load onto `leaflet`.
+
+One issue with my methodology, however, is that I am working with 2022 parcel data and city limits. I plan to work with my Dr. Winling, my advisor, and Max Oickle, who is the GIS specialist for the Chicago Covenants Project, to sort through these questions.
+
+### References
+
+1.  <https://www.w3schools.com/TAGS/tag_iframe.asp>
+2.  <https://ggplot2.tidyverse.org>
+3.  <https://leafletjs.com>
+4.  <https://cran.r-project.org/web/packages/tigris/index.html>
+
+### Lesson Plan
+
+Each lesson contains a PDF document that will house the detailed lesson plan. To do this, I used `<iframe>` to embed my PDF onto the page. This allows users to magnify, download, and print the document. Since PDFs are not accessible, I plan to later display this content with Markdown text. However, I wanted to play around with `<iframe>`.
+
+<iframe src="lesson-template.pdf" width="100%" height="700px">

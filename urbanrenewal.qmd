@@ -2,4 +2,19 @@
 title: "Lesson 3: Urban Renewal"
 ---
 
+This will be a lesson on urban renewal in Roanoke, VA.
+
+Aside from covenants and redlining data, the best way to visualize residential segregation is with Census tract data. When urban renewal began in Roanoke in 1955, the city had not yet been divided into tracts. Unlike covenants and redlining, urban renewal policy was race-neutral in language, targeting structures that were "blighted." The challenge with this module then becomes how to visualize how urban renewal was racially discriminatory.
+
+I will first include a map from the previous lesson, which compares covenants with redlining. With this map and some commentary, students will understand how housing discrimination led to disinvestment and disrepair in certain neighborhoods. Then, I will have a second map outlining urban renewal boundaries. Students will see that the boundaries overlap with areas that had been subjected to decades of housing discrimination. I have come across some digitzed maps from Roanoke's urban renewal authority but not all. I plan to locate and scan these with archival research.
+
+I will also note that, in many cases, urban renewal targeted structures that were perfectly suitable. I will embed snippets of oral history interviews that convey how Gainsboro and Northeast residents conceived of their neighborhoods differently from city officials.
+
+### References
+
+1.  <https://www.w3schools.com/TAGS/tag_iframe.asp>
+2.  <https://dsl.richmond.edu/panorama/renewal/#view=0/0/1&viz=cartogram&city=roanokeVA&loc=15/37.2750/-79.9350> (I am taking inspiration from this site, but the downloadable data is not spatial, so I won't do anything with it until I can find the boundaries for Roanoke's urban renewal zones)
+
+### Lesson Plan
+
 <iframe src="lesson-template.pdf" width="100%" height="700px">
