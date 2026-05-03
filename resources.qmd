@@ -11,3 +11,5 @@ Here are some further resources/sites from which I took inspiration:
 [Mapping Prejudice (racially restrictive covenants project in Minnesota)](https://mappingprejudice.umn.edu)
 
 [Renewing Inequality (urban renewal in Roanoke)](https://dsl.richmond.edu/panorama/renewal/#view=0/0/1&viz=cartogram&city=roanokeVA&loc=15/37.2740/-79.9377&cityview=pr)
+
+[Highway Gothic (font)](https://github.com/gregfleury/highwaygothic)

@@ -1,1 +1,16 @@
 /* css styles */
+
+@font-face {
+  font-family: "Highway Gothic";
+  src: url("fonts/HighwayGothic.woff2") format("woff2");
+}
+
+h1, h2, h3, .navbar-brand { letter-spacing: 0.1em; font-weight: 700; }
+
+.navbar { background: black !important; }
+
+.navbar a { color: white !important; }
+
+a { color: black; }
+
+a:hover { text-decoration: underline; }

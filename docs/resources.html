@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,9 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -153,6 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://experience.arcgis.com/experience/32c7a747127e46dda110e82848286394/">Chicago Covenants Project</a></p>
 <p><a href="https://mappingprejudice.umn.edu">Mapping Prejudice (racially restrictive covenants project in Minnesota)</a></p>
 <p><a href="https://dsl.richmond.edu/panorama/renewal/#view=0/0/1&amp;viz=cartogram&amp;city=roanokeVA&amp;loc=15/37.2740/-79.9377&amp;cityview=pr">Renewing Inequality (urban renewal in Roanoke)</a></p>
+<p><a href="https://github.com/gregfleury/highwaygothic">Highway Gothic (font)</a></p>
 
 
 
@@ -230,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/elliotsheehan\.github\.io\/teachingsegregation\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
