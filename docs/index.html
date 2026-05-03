@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#content-standards" id="toc-content-standards" class="nav-link" data-scroll-target="#content-standards">Content Standards</a></li>
   <li><a href="#skill-standards" id="toc-skill-standards" class="nav-link" data-scroll-target="#skill-standards">Skill Standards</a></li>
   <li><a href="#unit-outline" id="toc-unit-outline" class="nav-link" data-scroll-target="#unit-outline">Unit Outline</a></li>
-  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes">Footnotes</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -242,8 +242,8 @@ ul.task-list li input[type="checkbox"] {
 <p>To build the source sets for this unit, I will combine exisiting research with original. The lessons will contain material from <em>Root</em> Shock, the Gainsboro History project, and Gainsboro oral histories. I will conduct original research at Virginia Tech Special Collections, Roanoke Public Libraries, and City of Roanoke deeds office. One issue I foresee is reproducing archival material on the web, so I will be proactive about obtaining permissions.</p>
 <p>Each module will contain ready-to-use lesson materials and activities and a guide for teachers. To best accommodate students, the modules will employ the principles of Universal Design for Learning (UDL) and Differentiated Instruction (DI). I will also use tools learned in my digital history course to create the website, including R code and Quarto website building. The project will be publicly available for teachers and students of eleventh grade Virginia and US History. Other intended audiences include the portfolio committee, the Roanoke community, and future employers.</p>
 </section>
-<section id="footnotes" class="level2">
-<h2 class="anchored" data-anchor-id="footnotes">Footnotes</h2>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <p><a href="#_ftnref1">[1]</a> Robert C. Weaver,&nbsp;<em>The Negro Ghetto</em>&nbsp;(Harcourt, Brace &amp; World, 1968); Jane Jacobs,&nbsp;<em>The Death and Life of Great American Cities</em>&nbsp;(Random House, 1961); Herbert J. Gans,&nbsp;<em>The Urban Villagers: Group and Class in the Life of Italian-Americans</em>&nbsp;(Free Press, 1962).</p>
 <p><a href="#_ftnref2">[2]</a> Eric Avila,&nbsp;<em>The Folklore of the Freeway: Race and Revolt in the Modernist City</em>&nbsp;(University of Minnesota Press, 2014); Elizabeth Hinton,&nbsp;<em>America on Fire: The Untold History of Police Violence and Black Rebellion Since the 1960s</em>&nbsp;(Liveright Publishing, 2021); Mindy Thompson Fullilove,&nbsp;<em>Root Shock: How Tearing Up City Neighborhoods Hurts America, and What We Can Do About It</em>&nbsp;(Ballantine Books, 2004).</p>
 <p><a href="#_ftnref3">[3]</a> “Inquiry Design Model,” C3 Teachers. www.c3teachers.org/idm/.</p>
@@ -325,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/elliotsheehan\.github\.io\/teachingsegregation\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
